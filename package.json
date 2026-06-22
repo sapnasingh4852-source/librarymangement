@@ -12,9 +12,20 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "body-parser": "^2.3.0",
+    "dotenv": "^17.4.2",
     "ejs": "^6.0.1",
+    "express": "^5.2.1",
     "express.js": "^1.0.0",
     "mongoose": "^9.7.1",
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapnasingh4852-source/librarymangement.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sapnasingh4852-source/librarymangement/issues"
+  },
+  "homepage": "https://github.com/sapnasingh4852-source/librarymangement#readme"
 }

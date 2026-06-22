@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library System</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>📚 Library Management System</h1>
+
+<a href="/add" class="btn">➕ Add Book</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>book_name</th>
+      <th>Author</th>
+      <th>category</th>
+      <th>price </th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% books.forEach(book => { %>
+      <tr>
+        <td><%= book.book_name %></td>
+        <td><%= book.Author %></td>
+        <td><%= book.category %></td>
+        <td><%= book.price %></td>
+        <td><%= book.Quantity %></td>
+        <td>
+          <a href="/details/<%= book._id %>">View</a>
+          <a href="/edit/<%= book._id %>">Edit</a>
+          <a href="/delete/<%= book._id %>" onclick="return confirm('Delete this book?')">Delete</a>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+</body>
+</html>

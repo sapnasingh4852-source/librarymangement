@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Book</title>
+</head>
+<body>
+
+<h2>✏️ Edit Book</h2>
+
+<form method="POST" action="/edit/<%= book._id %>">
+
+  <input name="book_name" value="<%= book.book_name %>" />
+  <input name="Author" value="<%= book.Author %>" />
+  <input name="category" value="<%= book.category %>" />
+  <input name="price" value="<%= book.price %>" />
+  <input name="Quantity" value="<%= book.Quantity %>" />
+
+  <button type="submit">Update</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+
+<h2><%= heading %></h2>
+
+<form method="POST" action="/add">
+
+  <input name="book_name" placeholder="book_name" required />
+  <input name="Author" placeholder="Author" required />
+ <input name="category" placeholder="category" required />
+  <input name="price" placeholder="price" />
+  <input name="Quantity" placeholder="Quantity" required />
+
+  <button type="submit"><%= buttonText %></button>
+</form>
+
+</body>
+</html>
